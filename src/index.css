@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-900: #78350f;
+  
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-900: #064e3b;
+  
+  --animate-pulse-once: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) 1;
+}
+
+body {
+  background-color: var(--color-slate-950);
+  color: #e2e8f0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ukrywanie scrollbara */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Safe area dla iPhone'ów */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
