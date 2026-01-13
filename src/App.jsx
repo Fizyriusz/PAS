@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Sword, BookOpen, Sparkles, Skull, Flag, X, Map } from 'lucide-react';
+import { Sword, BookOpen, Sparkles, Skull, Flag, X, Map, Crown } from 'lucide-react';
 import { DATA_SIMPLE, DATA_ADVANCED } from './data/gameData';
 
-// Importujemy nasze nowe widoki
+// Importujemy widoki
 import IntroView from './views/IntroView';
 import RulesView from './views/RulesView';
 import LootView from './views/LootView';
 import CharView from './views/CharView';
+import GmView from './views/GmView';
 
 // --- KOMPONENTY UI ---
 
@@ -79,6 +80,10 @@ function App() {
                     <NavBtn active={tab === 'rules'} onClick={() => setTab('rules')} Icon={BookOpen} label="ZASADY" color={themeColor} />
                     <NavBtn active={tab === 'loot'} onClick={() => setTab('loot')} Icon={Sparkles} label="LOOT" color={themeColor} />
                     <NavBtn active={tab === 'char'} onClick={() => setTab('char')} Icon={Skull} label="POSTAĆ" color={themeColor} />
+                    {/* NOWY PRZYCISK: MG */}
+                    <div className="md:mt-4 md:border-t md:border-slate-800 md:pt-4">
+                        <NavBtn active={tab === 'gm'} onClick={() => setTab('gm')} Icon={Crown} label="MISTRZ" color="text-amber-500" />
+                    </div>
                 </div>
 
                 <div className="hidden md:block mt-auto pt-4 border-t border-slate-800">
@@ -104,6 +109,7 @@ function App() {
                             <div className="text-[10px] text-slate-500 font-mono tracking-wider">SYSTEM v2.1</div>
                         </div>
                     </div>
+                    {/* Mode Toggle (Mobile) */}
                     <div className="flex bg-slate-900 p-0.5 rounded-lg border border-slate-800">
                         <button onClick={() => setMode('simple')} className={`px-2 py-1 text-[10px] font-bold rounded ${mode === 'simple' ? 'bg-emerald-900/40 text-emerald-400' : 'text-slate-600'}`}>S</button>
                         <button onClick={() => setMode('advanced')} className={`px-2 py-1 text-[10px] font-bold rounded ${mode === 'advanced' ? 'bg-amber-900/40 text-amber-400' : 'text-slate-600'}`}>A</button>
@@ -116,6 +122,7 @@ function App() {
                         {tab === 'rules' && <RulesView data={DATA.rules} onFeedback={setFeedback} />}
                         {tab === 'loot' && <LootView data={DATA.loot} themeBg={themeBgBtn} />}
                         {tab === 'char' && <CharView classes={DATA.classes} spells={DATA.spells} onFeedback={setFeedback} color={themeColor} />}
+                        {tab === 'gm' && <GmView color={themeColor} />}
                     </div>
                 </main>
             </div>
