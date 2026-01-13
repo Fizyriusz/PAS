@@ -88,7 +88,7 @@ export const DATA_SIMPLE = {
     classes: {
         fighter: { 
             name: "Wojownik", 
-            role: "Czołg", 
+            role: "Pierwsza linia", 
             hp: 3, 
             mana: 0, 
             stats: "🔥 Biegłość: Walka Wręcz, Siła.\n⚪ Neutralny: Reszta.", 
@@ -152,3 +152,46 @@ export const DATA_ADVANCED = {
     },
     spells: {}
 };
+
+// ... (reszta pliku gameData.js bez zmian)
+
+export const DATA_INTRO = [
+    {
+        id: "intro_1",
+        icon: "Map",
+        title: "POCKET ADVENTURE: KIESZONKOWA WYPRAWA",
+        subtitle: "Podręcznik Wędrowca (Edycja Startowa)",
+        content: "**Witaj, Wędrowcze!**\n\nMasz przed sobą **Pocket Adventure** – grę, która zmienia garść kostek i żetonów w epicką opowieść o smokach, lochach i bohaterach. To system RPG (Role-Playing Game) stworzony z myślą o jednej zasadzie: **Maksimum przygody, zero matematyki.**\n\nZapomnij o ołówkach, kartkach i skomplikowanym liczeniu. Tutaj Twoje zdrowie to fizyczna kostka, którą trzymasz w dłoni. Twoja broń to Twój rzut. Twoja wyobraźnia to mapa.\n\nCzy jesteś gotów zebrać drużynę, zejść do podziemi i zdobyć chwałę, zanim skończy Ci się przerwa na kawę?"
+    },
+    {
+        id: "intro_2",
+        icon: "Backpack",
+        title: "CO MASZ W KIESZENI? (Twoje Narzędzia)",
+        content: "Zanim wyruszysz, poznaj swój ekwipunek. To nie są zwykłe kawałki plastiku – to Twoje życie i przeznaczenie.\n\n**1. KOŚĆ LOSU (d20)**\nTo ta największa, dwudziestościenna kość. To serce gry. Używasz jej, gdy zadajesz pytanie: *\"Czy mi się uda?\"*.\n\n* Czy trafię goblina? 🎲 **Rzuć d20.**\n* Czy przeskoczę przepaść? 🎲 **Rzuć d20.**\n* Czy uniknę pułapki? 🎲 **Rzuć d20.**\n\n**2. SERCE BOHATERA (Czerwone d6)**\nTo Twoje punkty życia. W tej grze nie zapisujesz obrażeń na kartce.\nGdy obrywasz, po prostu **obracasz kostkę w dół** (\"klikasz\").\n\n* Widzisz **6**? Jesteś w pełni sił.\n* Widzisz **1**? Ledwo stoisz na nogach.\n* Kostka znika? Padłeś w boju.\n\n**3. CZYSTA MAGIA (Niebieskie d6)**\nDla Czarodziejów i Kleryków. To Twoja amunicja. Chcesz rzucić Kulę Ognia? Musisz **spalić manę** – obrócić niebieską kostkę w dół. Magia jest potężna, ale się kończy. Zarządzaj nią mądrze!"
+    },
+    {
+        id: "intro_3",
+        icon: "Swords",
+        title: "ZŁOTA ZASADA: ZERO MATEMATYKI",
+        content: "W Pocket Adventure nie dodajemy, nie odejmujemy i nie dzielimy.\nKiedy rzucasz Kością Losu (d20), interesuje Cię tylko jedno – **PROGI**:\n\n💀 **1-10: PORAŻKA**\nSpudłowałeś. Oberwałeś. Potknąłeś się. Coś poszło nie tak.\n\n⚔️ **11-20: SUKCES**\nTrafiłeś! Uniknąłeś ciosu! Otworzyłeś zamek! Jesteś bohaterem.\n\n**To wszystko.**\nJeśli Twoja postać jest w czymś ekspertem (np. Wojownik w walce mieczem), po prostu bierzesz **dwie kostki** i wybierasz lepszy wynik. To takie proste."
+    },
+    {
+        id: "intro_4",
+        icon: "Rocket",
+        title: "JAK ZACZĄĆ W 3 KROKACH?",
+        content: "1. **Wybierz Klasę:**\nChcesz być niezniszczalnym **Wojownikiem**? Przebiegłym **Łotrzykiem**? Potężnym **Czarodziejem**? A może wspierającym **Klerykiem**? Weź odpowiednie żetony i kostki.\n\n2. **Rozłóż Mapę:**\nPołóż na stole kartę terenu lub po prostu wyobraź sobie wilgotną jaskinię. Ustaw żetony wrogów.\n\n3. **Rzuć Wyzwanie:**\nMistrz Gry (lub aplikacja) opisuje sytuację: *\"Widzicie wielkiego Ogra pilnującego skrzyni.\"*.\nCo robisz? Atakujesz? Skradasz się? Rzucasz czar?\n**Chwyć kość i sprawdź, co przyniesie los!**"
+    },
+    {
+        id: "intro_5",
+        icon: "Brain",
+        title: "CZYM WŁAŚCIWIE JEST RPG?",
+        subtitle: "(Role-Playing Game = Gra Fabularna)",
+        content: "Najprościej mówiąc: **To gra wyobraźni z zasadami.**\n\nPamiętasz, jak w dzieciństwie bawiłeś się w \"policjantów i złodziei\" albo rycerzy? Często kończyło się to kłótnią:\n*— Strzeliłem do ciebie!*\n*— Nieprawda, zrobiłem unik!*\n\nRPG to powrót do tamtych zabaw, ale tym razem mamy sędziego – **Kości**. Kiedy mówisz \"Atakuję smoka\", rzucasz kostką. To ona decyduje, czy Twój cios był epicki, czy też potknąłeś się o własny płaszcz.\n\n**Jak to wygląda w praktyce?**\nTo rozmowa. Nie ma planszy (chyba że chcecie), nie ma pionków, które muszą iść tylko w jedną stronę.\n\n1. **Mistrz Gry (lub Aplikacja) opisuje scenę:**\n*\"Wchodzicie do wilgotnej komnaty. Na środku stoi skrzynia, ale w cieniu coś się porusza...\"*\n\n2. **Ty (Gracz) decydujesz, co robisz:**\nW grze wideo miałbyś tylko przycisk \"Atak\". Tutaj możesz zrobić wszystko:\n*\"Skradam się do skrzyni\"*, *\"Rzucam kamieniem w cień\"* albo *\"Krzyczę: Halo, jest tu kto?!\"*.\n\n3. **Rzut Kością:**\nSprawdzamy, czy Twój szalony plan się powiódł.\n\n4. **Ciąg dalszy historii:**\nWspólnie tworzycie opowieść o waszych zwycięstwach i... zabawnych porażkach.\n\n**Kto wygrywa?**\nW RPG nikt nie przegrywa. Nie gracie *przeciwko* sobie, ale *razem* (jako Drużyna) przeciwko wyzwaniom. Celem nie jest dotarcie do mety, ale przeżycie świetnej przygody i dobra zabawa przy stole.\n\n**Pocket Adventure** to właśnie RPG w pigułce – esencja tej zabawy, bez zbędnego wertowania grubych ksiąg.\n\n---\n\n*Gotowy napisać własną legendę? Przejdź dalej i stwórz Bohatera!*"
+    },
+    {
+        id: "intro_6",
+        icon: "GitBranch",
+        title: "DWA SPOSOBY NA GRĘ (Tryby)",
+        content: "Pocket Adventure został zaprojektowany tak, aby rosnąć razem z Tobą. W pudełku znajdziesz zasady dla dwóch trybów rozgrywki. Wybierz ten, na który masz dzisiaj ochotę!\n\n🟢 **TRYB SIMPLE (Szybki Start)**\n**Dla kogo:** Dla nowicjuszy, dzieci, na imprezę lub szybką przerwę w pracy.\nTo esencja gry. Zero matematyki, zero skomplikowanych statystyk. Tutaj liczy się tylko rzut kością i \"klikanie\" punktów zdrowia. Zasady wytłumaczysz w 3 minuty, a cała przygoda zajmie kwadrans. To idealny sposób, by poczuć klimat RPG bez bólu głowy.\n\n🔴 **TRYB ADVANCED (Pełne Doświadczenie)**\n**Dla kogo:** Dla tych, którzy chcą więcej taktyki i głębi.\nSpokojnie – to nie jest skok na głęboką wodę! Tryb Advanced nie jest trudny. To po prostu rozbudowa trybu Simple o kilka dodatkowych mechanik (jak pancerz czy konkretne czary), które dają Ci więcej możliwości decyzyjnych.\n\n💡 **WAŻNE: Brama do wielkich przygód**\nTryb Advanced to Twój **pomost do świata \"dużych\" gier fabularnych**.\nMechaniki, których tu używamy (modyfikatory atrybutów, Klasa Pancerza, Testy Obronne), to celowo uproszczone wersje zasad, które rządzą w takich legendarnych systemach jak **Dungeons & Dragons**, **Warhammer** czy **Pathfinder**.\n\nTraktuj Pocket Adventure jako swój poligon treningowy. Jeśli opanujesz tryb Advanced, będziesz gotowy, by w przyszłości usiąść do sesji w \"duże\" RPG, rozumiejąc ich fundamenty i nie czując się zagubionym. To Twoja przepustka do największego hobby świata!"
+    }
+];
